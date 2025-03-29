@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="flex justify-center items-center ">
-   
+
+<body class="flex justify-center items-center h-screen w-full bg-gray-100">
+    <div class="container flex flex-col gap-4 w-[90%] max-w-[350px] bg-[#d3d3f6] p-5 rounded-lg shadow-xl m-[30px]">
+        
+        <div class="w-full flex justify-center items-center mb-2">
+            <input type="text" id="inputVal"
+                class="bg-[#1E1E2C] w-full h-[70px] text-white text-3xl rounded-lg px-5 text-right shadow-md" disabled />
+        </div>
+        
+        <div class="grid grid-cols-4 gap-3">
+            <button class="btn bg-[#b6aee8] text-[#1E1E2C] p-4 rounded-lg">AC</button>
+            <button class="btn bg-[#b6aee8] text-[#1E1E2C] p-4 rounded-lg">CE</button>
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">%</button>
+            <button class="btn bg-[#5C5CAD] text-white p-4 rounded-lg">÷</button>
+            
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">7</button>
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">8</button>
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">9</button>
+            <button class="btn bg-[#5C5CAD] text-white p-4 rounded-lg">×</button>
+            
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">4</button>
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">5</button>
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">6</button>
+            <button class="btn bg-[#5C5CAD] text-white p-4 rounded-lg">-</button>
+            
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">1</button>
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">2</button>
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">3</button>
+            <button class="btn bg-[#5C5CAD] text-white p-4 rounded-lg">+</button>
+            
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg col-span-2">0</button>
+            <button class="btn bg-white text-[#1E1E2C] p-4 rounded-lg">.</button>
+            <button class="btn bg-[#5C5CAD] text-white p-4 rounded-lg">=</button>
+        </div>
+    </div>
+    
     <script src="input.js"></script>
 </body>
+
 </html>
